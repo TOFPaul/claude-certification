@@ -1,6 +1,8 @@
 ---
 name: pr-description
 description: Writes descriptions for pull requests. Use when creating a PR, writing a PR, or when the users asks to summarize changes for a pull request
+model: sonnet
+allowed-tools: Read, Grep, Glob, Bash
 ---
 
 When writing a PR description:
