@@ -1,3 +1,12 @@
-anthropic
-python-dotenv
-jupyterlab
+# Setup:
+# 1. Install Python 3.11+
+# 2. Create a venv:
+#      VS Code: Ctrl+Shift+P > "Python: Create Environment" > Venv
+#      Terminal: python -m venv venv, then activate with venv\Scripts\Activate.ps1 (Windows) or source venv/bin/activate (Mac/Linux)
+# 3. Copy .env.example to 02-building-with-claude-api/notebooks/.env and add your API key
+# VS Code handles the rest when you open the notebooks.
+
+anthropic==0.99.0
+ipykernel==7.2.0
+jupyterlab==4.5.7
+python-dotenv==1.2.2

@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Parse an AWS S3 bucket name from a full S3 URI and validate that it follows AWS naming conventions",
+    "format": "regex",
+    "solution_criteria": "Regex must extract bucket name from URIs like 's3://my-bucket-name/key/path', validate lowercase letters, numbers, hyphens, and be 3-63 characters long, without consecutive hyphens or starting/ending with hyphen"
+  },
+  {
+    "task": "Write a Python function that formats an AWS CloudWatch log event into a readable string with timestamp, log level, and message",
+    "format": "python",
+    "solution_criteria": "Function must accept a CloudWatch log event dict, extract the timestamp (converting from milliseconds), log level, and message, and return a formatted string like '[2024-01-15 10:30:45] ERROR: Failed to connect to database'"
+  },
+  {
+    "task": "Generate a JSON IAM policy document that grants read-only access to a specific S3 bucket",
+    "format": "json",
+    "solution_criteria": "JSON must be a valid IAM policy with proper Version, Statement array, Effect set to 'Allow', Actions limited to s3:GetObject and s3:ListBucket, and Resource restricted to a specific bucket ARN"
+  }
+]
