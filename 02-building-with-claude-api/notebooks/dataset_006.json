@@ -1,0 +1,36 @@
+[
+  {
+    "task": "Create a JSON configuration file for an AWS Lambda function that processes S3 events, with environment variables for the target bucket and log level",
+    "format": "json",
+    "solution_criteria": [
+      "Must include Lambda function metadata (name, runtime, role ARN)",
+      "Must contain an S3 event source mapping configuration",
+      "Must include environment variables for target bucket name and log level",
+      "Must specify valid AWS Lambda runtime (e.g., python3.11)",
+      "Must include proper JSON syntax and structure"
+    ]
+  },
+  {
+    "task": "Write a Python function that validates an AWS IAM policy document by checking if it contains at least one Principal, Effect, and Action statement, then returns True or False",
+    "format": "python",
+    "solution_criteria": [
+      "Function must accept a dictionary or JSON string as input",
+      "Must check for presence of 'Principal', 'Effect', and 'Action' keys",
+      "Must return a boolean value",
+      "Must handle both valid and invalid policy structures gracefully",
+      "Should work with nested Statement arrays in IAM policies"
+    ]
+  },
+  {
+    "task": "Create a regular expression pattern that matches valid AWS S3 bucket names according to AWS naming rules (3-63 characters, lowercase letters, numbers, hyphens, must start and end with lowercase letter or number)",
+    "format": "regex",
+    "solution_criteria": [
+      "Must enforce length constraint of 3-63 characters",
+      "Must only allow lowercase letters (a-z), numbers (0-9), and hyphens (-)",
+      "Must require the name to start with a lowercase letter or number",
+      "Must require the name to end with a lowercase letter or number",
+      "Must not allow consecutive hyphens or hyphens at start/end",
+      "Should be a single regex pattern that can be compiled and tested"
+    ]
+  }
+]

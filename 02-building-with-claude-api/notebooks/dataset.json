@@ -1,17 +1,49 @@
 [
   {
-    "task": "Parse an AWS S3 bucket name from a full S3 URI and validate that it follows AWS naming conventions",
-    "format": "regex",
-    "solution_criteria": "Regex must extract bucket name from URIs like 's3://my-bucket-name/key/path', validate lowercase letters, numbers, hyphens, and be 3-63 characters long, without consecutive hyphens or starting/ending with hyphen"
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "75",
+      "goal": "Marathon runner preparing for race day - maximize carbohydrate loading and hydration",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan totals 4000+ calories with carbohydrates comprising 60-65% of total energy",
+      "Includes 3 meals and 2-3 snacks with specific hydration strategy (total fluid intake specified)",
+      "Compact format with meal timing, portions, and key macronutrient breakdown for each item"
+    ],
+    "task_description": "write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring 4000+ calories with emphasis on carbohydrate loading and hydration strategy"
   },
   {
-    "task": "Write a Python function that formats an AWS CloudWatch log event into a readable string with timestamp, log level, and message",
-    "format": "python",
-    "solution_criteria": "Function must accept a CloudWatch log event dict, extract the timestamp (converting from milliseconds), log level, and message, and return a formatted string like '[2024-01-15 10:30:45] ERROR: Failed to connect to database'"
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "85",
+      "goal": "strength and power development for weightlifting competition",
+      "restrictions": "none"
+    },
+    "solution_criteria": [
+      "Meal plan spans exactly 1 day with clear meal timing",
+      "Includes high protein content (minimum 2.0g per kg bodyweight) distributed across meals",
+      "Contains pre-training and post-training meal recommendations with appropriate macronutrient composition",
+      "Plan is concise and practical (no more than 5-6 meals listed with brief descriptions)"
+    ],
+    "task_description": "write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) needing protein-focused meals with strategic timing around training sessions"
   },
   {
-    "task": "Generate a JSON IAM policy document that grants read-only access to a specific S3 bucket",
-    "format": "json",
-    "solution_criteria": "JSON must be a valid IAM policy with proper Version, Statement array, Effect set to 'Allow', Actions limited to s3:GetObject and s3:ListBucket, and Resource restricted to a specific bucket ARN"
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "71",
+      "goal": "Maintain weight at 71kg for lightweight boxing division while maximizing strength and endurance for 12-round fights",
+      "restrictions": "No dairy due to lactose intolerance"
+    },
+    "solution_criteria": [
+      "Meal plan totals approximately 2,400-2,600 calories to maintain current weight without excess",
+      "Includes 4-5 meals distributed throughout the day with adequate protein (1.6-2.0g per kg body weight) for muscle recovery",
+      "Contains no dairy products and accommodates lactose intolerance",
+      "Provides balanced macronutrients supporting both strength training and cardiovascular endurance for boxing performance"
+    ],
+    "task_description": "write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a sport with specific weight class constraints (boxer or wrestler) requiring calorie control while maintaining performance nutrition"
   }
 ]
